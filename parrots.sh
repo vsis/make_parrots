@@ -4,8 +4,6 @@ source colors.sh
 
 SCRIPT=$(realpath $0)
 PARROT_PATH=$(dirname $SCRIPT)
-COLORS=($MAGENTA $YELLOW $BLUE $CYAN $RED)
-NUM_OF_COLORS=6
 
 print_frames(){
     current_color=0
