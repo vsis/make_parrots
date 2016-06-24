@@ -1,0 +1,2 @@
+parrots:
+	./parrots.sh parrot

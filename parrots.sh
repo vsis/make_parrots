@@ -5,6 +5,14 @@ source colors.sh
 SCRIPT=$(realpath $0)
 PARROT_PATH=$(dirname $SCRIPT)
 
+trap ctrl_c INT
+
+ctrl_c(){
+    clear
+    printf $COL_RESET
+    exit 0
+}
+
 print_frames(){
     current_color=0
     while :
