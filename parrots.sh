@@ -2,8 +2,6 @@
 
 source colors.sh
 
-SCRIPT=$(realpath $0)
-PARROT_PATH=$(dirname $SCRIPT)
 
 trap ctrl_c INT
 
@@ -34,4 +32,4 @@ print_frames(){
 }
 
 
-print_frames  $PARROT_PATH/frames/$1 0.1
+print_frames  frames/$1 0.1
